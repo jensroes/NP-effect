@@ -1,0 +1,67 @@
+\begin{frame}[fragile]{Meta LMM}
+			
+	\begin{equation*}
+		\begin{aligned}	
+			y_{ijk} \sim LogNormal(\mu_{ijk}, \sigma_{e_k}^2)\\
+			\mu_{ijk} = \alpha_k + \beta_k \cdot x_{[0,1]} + u_i + w_j\\
+			\alpha_k = \alpha_{\mu} + \alpha_{\tau} \cdot \alpha_{\eta_k}\\
+			\beta_k = \beta_{\mu} + \beta_{\tau} \cdot \beta_{\eta_k}\\
+			\text{constraint: }\sigma_{e_k}^2>0\\
+		\end{aligned}	
+	\end{equation*}		
+	\begin{small}	
+		\begin{itemize}
+			\item $x=0$ for simple NPs; $x=1$ for conjoined NPs.
+			\item $\beta_k$ is the latency change for conjoined NPs for the $k$th study.
+			\item $\beta_{\mu}$ is the pooled latency change for conjoined NPs.
+		\end{itemize}
+	\end{small}
+	
+\end{frame}
+
+\begin{frame}[fragile]{Meta LMM (unequal variance)}
+	\begin{equation*}
+		\begin{aligned}
+			y_{ijk} \sim
+			\begin{dcases*} 
+				LogNormal(\mu_{ijk}, \sigma_{e_k}^2), &  if NP$_{ijk}$ = simple\\
+				LogNormal(\mu_{ijk} + \beta_k, \sigma_{e'_k}^2) & else if NP$_{ijk}$ = conjoined\\
+			\end{dcases*}\\
+			\mu_{ijk} = \alpha_k + u_i + w_j\\
+			\alpha_k = \alpha_{\mu} + \alpha_{\tau} \cdot \alpha_{\eta_k}\\
+			\beta_k = \beta_{\mu} + \beta_{\tau} \cdot \beta_{\eta_k}\\
+			\text{constraint: }\sigma_{e_k}^2>0\\
+			\sigma_{e'_k}^2 > \sigma_{e_k}^2
+		\end{aligned}
+	\end{equation*}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Meta mixture model (alternative hypothesis)}
+
+	\begin{equation*}
+		\begin{aligned}
+		y_{ijk} \sim \theta_{{NP}_k} \cdot LogNormal(\mu_{ijk} + \delta_k, \sigma_{e'_k}^2) + \\
+			(1 - \theta_{{NP}_k}) \cdot LogNormal(\mu_{ijk}, \sigma_{e_k}^2) \\
+			\mu_{ijk} = \alpha_k + u_i + w_j\\
+			\alpha_k = \alpha_{\mu} + \alpha_{\tau} \cdot \alpha_{\eta_k}\\
+			\theta_{{NP}_k} = Logit^{-1}(\phi_{{NP}_k})\\
+			\theta_{{NP}} = Logit^{-1}(\phi_{_{\mu_{NP}}})\\		
+			\phi_{{NP}_k} \sim Normal(\phi_{\mu_{NP}}, \phi_{\tau}^2)\\
+			\delta_k \sim Normal(\delta_{\mu}, \delta_{\tau}^2)
+			\text{constraint: }\delta_k, \sigma_{e_k}^2, \phi_{\tau}, \delta_{\tau}>0\\
+			\sigma_{e'_k}^2 > \sigma_{e_k}^2 
+		\end{aligned}
+	\end{equation*}
+	
+	\begin{small}	
+		\begin{itemize}
+			\item Pooled coefficient for parameters: $\theta_{NP}$, $\delta$
+%			\item Inverse-logit for continuous prior on mixing proportion.
+		\end{itemize}
+	\end{small}
+	
+\end{frame}
+
+

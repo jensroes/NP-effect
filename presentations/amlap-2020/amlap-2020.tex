@@ -1,0 +1,53 @@
+\documentclass{slides}
+\usepackage[british]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[style=apa, sortcites=true, sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{british}{british-apa}
+\addbibresource{references.bib}
+\usepackage{framed, color}
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+
+\graphicspath{{./gfx/}}
+% Frame number
+\setbeamertemplate{footline}[frame number]
+
+
+\title[]{ No scope for planning -- language pre-planning as mixture process }
+
+\author{\small Jens Roeser \\ $\phantom{foo}$ \\ Mark Torrance $\phantom{foo}$ Mark Andrews $\phantom{foo}$ Thom Baguley \\$\phantom{foo}$ \\ Nottingham Trent University, UK \\ \url{jens.roeser@ntu.ac.uk} }
+
+\institute{26th AMLaP, University of Potsdam}
+\date{Sept 3, 2020}
+
+\begin{document}\frame{\titlepage}
+
+
+% 1. Planning scope variability: under pressure people dedicate less time to planning
+% 2. Planning scope effect: certain syntactic configuration require more preplanning (regardless of syn adjacency)
+
+% 2 is evidence for syntactic configuration guiding advance planning
+% 1 is evidence against this
+
+
+% flexibility comes from whether or not lexical information within the syntactic scope is activated
+% link to coefficients: 1 sec is too long for only first picture (scene gist, message)
+
+	\input{slides/intro}
+	\input{slides/analysis}
+	\input{slides/results-meta}
+	\input{slides/interim}
+	\input{slides/method-exps}
+	\input{slides/results-exps}
+	\input{slides/discussion}
+	\input{slides/thanks}
+	\input{references}	
+	\input{slides/equations}
+	\input{slides/meta-mix_comps}
+	\input{slides/exps-mix_comps}
+	\input{slides/modelcomp-exps}
+	
+\end{document}
+
+

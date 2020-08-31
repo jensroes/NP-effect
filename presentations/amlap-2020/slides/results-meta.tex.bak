@@ -1,0 +1,73 @@
+
+\begin{frame}{NP-type effect (LMM)}
+	\begin{flushright}
+		\includegraphics[scale=.5]{NPmeta.pdf}
+	\end{flushright}
+\end{frame}
+
+
+\begin{frame}{NP-type effect (LMM)}
+	\begin{flushright}	
+		\includegraphics[scale=.5]{NPmetadiff.pdf}
+	\end{flushright}
+\end{frame}
+
+
+
+\begin{frame}{Model comparisons}
+\begin{scriptsize}
+% latex table generated in R 4.0.2 by xtable 1.8-4 package
+% Tue Aug 18 15:17:51 2020
+	\begin{table}[ht]
+	\centering
+	\caption{\scriptsize{Predictive performance estimated as the \textit{expected log pointwise predictive density} ($\widehat{elpd}$) \parencite{vehtari2015pareto, vehtari2017practical}. Models are ordered by predictive performance (model with highest predictive performance in top row)}. Standard error in parentheses.}
+		\begin{tabular}{lrrl}
+		\toprule
+		Models & $\updel\widehat{elpd}$ & $\widehat{elpd}$ & Description \\ [1ex]
+		\midrule
+		MoG-1 & -- & -201,511 (175) & Mixing proportions by NP type \\ [1ex]
+  		MoG-0 & -10 (6) & -201,520 (175) & Null model \\ [1ex]
+ 		LMM-1 & -980 (101) & -202,491 (214) & NP-type effect \\ [1ex]
+  		LMM-0 & -1,167 (96) & -202,678 (212) & Null model \\ [1ex]
+ 		LMM-2 & -3,511 (219) & -205,022 (307) & Larger variance for conjoined NP \\ [1ex]
+		\bottomrule
+		\end{tabular}\\
+		\textit{Note.} LMM = Linear mixed effects model; MoG = Mixture of Gaussians 
+	\end{table}
+\end{scriptsize}
+\end{frame}
+
+
+\begin{frame}{Model comparisons}
+\begin{scriptsize}
+% latex table generated in R 4.0.2 by xtable 1.8-4 package
+% Tue Aug 18 15:17:51 2020
+	\begin{table}[ht]
+	\centering
+	\caption{\scriptsize{Predictive performance estimated as the \textit{expected log pointwise predictive density} ($\widehat{elpd}$) \parencite{vehtari2015pareto, vehtari2017practical}. Models are ordered by predictive performance (model with highest predictive performance in top row)}. Standard error in parentheses.}
+		\begin{tabular}{lrrl}
+		\toprule
+		Models & $\updel\widehat{elpd}$ & $\widehat{elpd}$ & Description \\ [1ex]
+		\midrule
+		\rowcolor{yellow!40!white}MoG-1 & -- & -201,511 (175) & Mixing proportions by NP type \\ [1ex]
+  		MoG-0 & -10 (6) & -201,520 (175) & Null model \\ [1ex]
+ 		\rowcolor{yellow!40!white}LMM-1 & -980 (101) & -202,491 (214) & NP-type effect \\ [1ex]
+  		LMM-0 & -1,167 (96) & -202,678 (212) & Null model \\ [1ex]
+ 		LMM-2 & -3,511 (219) & -205,022 (307) & Larger variance for conjoined NP \\ [1ex]
+		\bottomrule
+		\end{tabular}\\
+		\textit{Note.} LMM = Linear mixed effects model; MoG = Mixture of Gaussians 
+	\end{table}
+\end{scriptsize}
+\end{frame}
+
+
+
+\begin{frame}{Probability of long latencies (MoG)}
+
+	\begin{flushright}
+		\includegraphics[scale=.5]{mogmeta.pdf}
+	\end{flushright}
+
+
+\end{frame}

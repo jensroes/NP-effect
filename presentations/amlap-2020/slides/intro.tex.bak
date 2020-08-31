@@ -1,0 +1,173 @@
+\begin{frame}
+
+\begin{Large}
+	\begin{center}
+		\textit{How do we create syntactic structures?}
+	\end{center}
+\end{Large}
+
+\end{frame}
+
+
+\begin{frame}{Turning ideas into language \parencite{bock1994}}
+
+\begin{minipage}[t]{.45\textwidth}
+\begin{small}
+\begin{itemize}
+	\item Message entities are unordered.
+	\item Verbalisation requires linearisation of words. % of a hierarchically structured linguistic plan.
+	\item How is order being created: pragmatic, lexical and / or syntactic factors. 
+\end{itemize}
+\end{small}
+\end{minipage}
+
+\begin{backgroundblock}{60mm}{20mm}	
+	\includegraphics[scale=.45]{gfx/BLmodel.png}
+\end{backgroundblock}
+
+\end{frame}
+
+
+
+\begin{frame}{Syntax in language production}
+
+% P 25 in Bock and Ferreira 2014: Paul (1886/190) and Wundt (1912)
+% Paul: incremental lexical view
+% Wundt: aboutness relations at the core
+% Kuchinski relational vs non-relational 
+
+	\begin{enumerate}
+		\item Syntax is an emergent property of word-driven planning.
+		\item Syntactic-relations guide lexical retrieval.
+		\begin{itemize}
+			\item[a.] Deterministic: scope is determined by syntactic properties of the intended utterance.
+			\item[b.] Non-deterministic: multiple candidate structures are planned  \parencite{kempen1987incremental}.		
+		\end{itemize}
+		\item Either route (relational and non-relational) is available \parencite[at the message level][]{konopka2014priming}.
+
+	\end{enumerate}
+
+\vspace{1cm}
+\begin{center}
+	\textit{Under which circumstances do we find evidence for pre-utterance syntactic planning?}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}{Image-description task}
+	
+	\only<1>{
+		\begin{flushleft}
+			\vspace{4cm}
+			\Huge{\textbf{+}}
+		\end{flushleft}
+	}	
+	
+	
+	\only<2>{
+		\begin{backgroundblock}{20mm}{37mm}		
+			\includegraphics[scale=.35]{gfx/peter2}
+		\end{backgroundblock}
+		
+		\begin{backgroundblock}{55mm}{36mm}		
+			\includegraphics[scale=.4]{gfx/073} 
+		\end{backgroundblock}
+		
+		\begin{backgroundblock}{90mm}{37mm}		
+			\includegraphics[scale=.4]{gfx/129}
+		\end{backgroundblock}
+	}
+	
+	\only<3>{
+		\begin{backgroundblock}{20mm}{23mm}		
+			\includegraphics[scale=.35]{gfx/peter2}
+		\end{backgroundblock}
+		
+		\begin{backgroundblock}{55mm}{22mm}		
+			\includegraphics[scale=.4]{gfx/073} 
+		\end{backgroundblock}
+		
+		\begin{backgroundblock}{90mm}{52mm}		
+			\includegraphics[scale=.4]{gfx/129}
+		\end{backgroundblock}
+	}
+	
+	
+	\only<4>{
+		\begin{center}
+			{\huge\textit{The boy and the dog moved above the kite.}}
+		\end{center}
+	}
+	
+	
+	
+\end{frame}
+
+
+
+\begin{frame}{Advance planning involves syntax}
+
+\begin{itemize}
+	\item[1a.] \textbf{The boy and the dog} moved above the kite.
+	\item[1b.] \textbf{The boy} moved above the dog and the kite.
+\end{itemize}
+\vfill
+\begin{itemize}
+		\item Longer onset latency for \textbf{conjoined NPs} \parencite[e.g.][]{martin2014working,smi99,wag10}.
+		\item ``Phrases as a default planning scope'' \parencite{martin2010planning}
+		\item NP syntax was planned before production onset.
+		\item Independent of lexical properties of N2 \parencite{gri01}.
+\end{itemize}
+
+\end{frame}
+
+
+%\begin{comment}
+\begin{frame}{Advance planning involves syntax}
+\begin{itemize}
+	\item Subordination vs coordination with conflicting results \parencite{not07, all07}.
+	\begin{itemize}
+		\item[2a.] The A with the B is \dots
+		\item[2b.] The A and the B are \dots
+	\end{itemize}		
+	\item Syntactic proximity \parencite{lee13}.
+	\begin{itemize}
+		\item[3a.] Click on [[the fork of the king] below the apple]
+		\item[3b.] Click on [the fork of [the king below the apple]]
+	\end{itemize}
+\end{itemize}
+\end{frame}
+%\end{comment}
+
+
+\begin{frame}{Implication of the standard statistical treatment}
+
+	\begin{itemize}
+		\item Evidence suggests that there is a systematic difference betwen simple and conjoined NPs. 	
+		\item \uncover<2->{Statistical models (LMM, ANOVA) imply mapping onto a deterministic syntax-driven model.}
+		\item	\uncover<3->{Under these models, the alternative hypothesis, i.e. preplanning beyond the first noun is more likely but not obligated in conjoined NPs, couldn't be tested.}
+	\end{itemize}
+
+\end{frame}
+
+% Under what circumstances would it be optional to plan phrase syntax or not
+% Alternative: syntax planning is non-deterministic
+% a. a syntactic route is available as well as a lexical route
+% b. a lexical-guided production system can in in principle prepare larger chunks before utterance onset for non-syntactic reasons (distance between nouns; visual grouping).
+
+
+\begin{frame}{Alternative explantions}
+
+\begin{itemize}
+	\item[1.] Syntax preplanning / use of syntactic route is non-deterministic
+	\item[2.] Preplanning beyond the first noun is not obligated by the production system but more likely for conjoined NPs.
+	\item[$\rightarrow$] Fluency pressure requires preplanning of B in \textit{The A and the B moved \dots} if there is not enough time to plan B in parallel to articulation \parencite{all07,griffin2003reversed}.
+%	\item Slowdown for conjoined NPs is the results of a subset of trials. % (if the first noun is short, or the second noun is difficult etc.).
+%	\item However, pressure on the planning system is known to affecting syntactic form \parencite{roeser2020semantic,swets2014individual}.	
+%	\item \dots and lexical scope but not syntactic scope \parencite{kon12,wheeldon2013}
+\end{itemize}
+
+\end{frame}
+
+

@@ -1,0 +1,28 @@
+\begin{frame}{Summary}
+
+\begin{itemize}
+	\item The slowdown frequently observed for conjoined NPs can be attributed to a small proportion of trials.
+	\item Different pattern for \textcite{hardy2019age,hardy2020healthy} data compared to data from  \textcite{martin2010planning} and \textcite{roeser2019advance}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Follow-up experiments}
+
+\setlength{\leftmargini}{0.5cm}
+\setlength{\leftmarginii}{0.5cm}
+\begin{itemize}
+	\item Most studies in our pool included other manipulations.
+	\item[] \textbf{Experiment 1:} 
+	\begin{itemize}
+		\item Reproduce NP effect and alternative analysis after
+		\item[i.] \dots reducing the manipulation to simple and conjoined NPs.
+		\item[ii.] \dots controlling image names
+	\end{itemize}
+	\item[] \textbf{Experiment 2:} 
+	\begin{itemize}
+		\item Assess the impact of the manipulation of the visual stimulus on the model parameter independently of utterance sytnax.
+		\item Elicit name lists instead of sentences \parencite[as in][]{martin2010planning}
+	\end{itemize}
+\end{itemize}
+
+\end{frame}

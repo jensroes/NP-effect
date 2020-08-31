@@ -1,0 +1,38 @@
+% summary of claim
+
+\begin{frame}{Discussion: summary}
+	\begin{itemize}
+		\item Evidence against the phrase-as-planning-unit hypothesis \parencite[as in][]{martin2010planning,roeser2019advance,smi99}
+		\item Planning conjoined NPs is not obligated by the language production system.
+		\item Therefore the NP effect is no evidence that syntax is obligated by the production system.
+	\end{itemize}
+\end{frame}
+
+
+% why conjoined NPs then if not syntax?
+
+\begin{frame}{Discussion: alternative}
+	\begin{itemize}
+		\item[i.] Linear distance between first two nouns:
+		\item preplanning is required in some trials to avoid intra-sentential pausing.
+		\item[ii.] Both a syntactic and a word-driven route are available to the planning system:
+		\item using the syntactic-route leads to a slowdown in conjoined NPs but not in simple NPs. 
+	\end{itemize}
+\end{frame}
+
+
+% why do we get this effect in experiment 2?
+% effect must be visual
+
+\begin{frame}{Discussion: mixture models}
+
+	\begin{itemize}
+		\item Both word-driven and syntax-driven planning strategies are available to the production system.
+		\item Mixture models allow us to statistically capture that these routes are not used deterministically \dots
+		\item but either route is more (or less) likely to be used under certain circumstances \parencite{konopka2014priming}. 
+	\end{itemize}
+
+\end{frame}
+
+
+

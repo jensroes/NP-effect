@@ -1,0 +1,64 @@
+\begin{frame}[fragile]{Stan code}
+	\begin{adjustwidth}{-2.5em}{-1.5em}
+		\begin{scriptsize}
+			\begin{lstlisting}
+
+	for(n in 1:N){
+		if(nounphrase[n]==1){
+			target += log_sum_exp(
+				log(prob_simple) + 
+					lognormal_lpdf(y[n] | NP + delta + 
+					u[subj[n]] + w[items[n]], sigmap_e), 
+				log1m(prob_simple) + 
+					lognormal_lpdf(y[n] | NP + 
+					u[subj[n]] + w[items[n]], sigma_e));
+		}
+		if(nounphrase[n]==2){
+			target += log_sum_exp(
+				log(prob_complex) + 
+					lognormal_lpdf(y[n] | NP + delta + 
+					u[subj[n]] + w[items[n]], sigmap_e), 
+				log1m(prob_complex) + 
+					lognormal_lpdf(y[n] | NP + 
+					u[subj[n]] + w[items[n]], sigma_e));
+		}
+	}
+	\end{lstlisting}
+\end{scriptsize}
+\end{adjustwidth}	
+\end{frame}
+
+\begin{frame}[fragile]{Stan code}
+\begin{adjustwidth}{-2.5em}{-1.5em}
+	\begin{scriptsize}
+	\begin{lstlisting}
+	for(n in 1:N){
+		if(nounphrase[n]==1){
+			lps[1] = log_theta_simple[1] + 
+				lognormal_lpdf(y[n] | mu - gamma + 
+				u[subj[n]] + w[items[n]], sigmap_e[2]);
+			lps[2] = log_theta_simple[2] + 
+				lognormal_lpdf(y[n] | mu + 
+				u[subj[n]] + w[items[n]], sigma_e);
+			lps[3] = log_theta_simple[3] + 
+				lognormal_lpdf(y[n] | mu + delta + 
+				u[subj[n]] + w[items[n]], sigmap_e[1]);
+		}
+		if(nounphrase[n]==2){
+			lps[1] = log_theta_complex[1] + 
+				lognormal_lpdf(y[n] | mu - gamma + 
+				u[subj[n]] + w[items[n]], sigmap_e[2]);
+			lps[2] = log_theta_complex[2] + 
+				lognormal_lpdf(y[n] | mu + 
+				u[subj[n]] + w[items[n]], sigma_e);
+			lps[3] = log_theta_complex[3] + 
+				lognormal_lpdf(y[n] | mu + delta + 
+				u[subj[n]] + w[items[n]], sigmap_e[1]);
+		}
+		target += log_sum_exp(lps); 
+	}
+	\end{lstlisting}
+	\end{scriptsize}
+\end{adjustwidth}	
+	
+\end{frame}

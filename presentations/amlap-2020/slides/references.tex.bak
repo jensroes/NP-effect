@@ -1,0 +1,13 @@
+%-------------------------------------------------------------------------
+% REFERENCES
+%-------------------------------------------------------------------------
+%\renewcommand*{\bibfont}{\footnotesize}
+\begin{frame}[allowframebreaks]{References}
+	
+%	\bibliographystyle{apa}
+%	\bibliographystyle{apacite}
+%	\bibliography{refeferences}
+\printbibliography
+	
+	
+\end{frame}
