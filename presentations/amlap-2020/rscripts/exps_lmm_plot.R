@@ -39,7 +39,7 @@ lmm %>% mutate(Experiment = recode(Experiment, "1" = "1\ne.g. 'A and the B moved
   facet_wrap(~Experiment, nrow = 2, strip.position = "left", labeller = label_both)  +
   scale_colour_manual("Stimulus", values = c("black", "firebrick4")) +
   scale_fill_manual("Stimulus", values = c("grey", "firebrick4")) +
-  scale_x_continuous(limits = c(800, 1470)) +
+  scale_x_continuous(limits = c(800, 1400)) +
   labs(y = "", x = "Onset latency [in msecs]") +
   theme(legend.position = "bottom",
         axis.text.y = element_blank(),

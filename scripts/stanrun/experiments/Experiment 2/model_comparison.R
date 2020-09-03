@@ -30,7 +30,7 @@ mc %<>% as.data.frame() %>%
   select(name, elpd_diff:se_elpd_loo) %>%
   rename(Model = name);mc
 
-file_out <- paste0("results/experiments/loos_exp2.csv")
+file_out <- paste0("results/loos_exp2.csv")
 write_csv(mc, file_out)
 
 loo_compare(loo_LMM, loo_LMM0) %>%
@@ -47,7 +47,7 @@ loo_compare(loo_MoG, loo_LMM) %>%
   select(Model, elpd_diff, se_diff)  -> moglmm
 
 models <- bind_rows(lmm, moglmm)  
-file_out <- paste0("results/experiments/loos_exp2_diff.csv")
+file_out <- paste0("results/loos_exp2_diff.csv")
 write_csv(models, file_out)
 
 

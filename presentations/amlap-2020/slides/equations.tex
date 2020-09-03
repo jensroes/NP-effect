@@ -12,8 +12,6 @@
 	\begin{small}	
 		\begin{itemize}
 			\item $x=0$ for simple NPs; $x=1$ for conjoined NPs.
-			\item $\beta_k$ is the latency change for conjoined NPs for the $k$th study.
-			\item $\beta_{\mu}$ is the pooled latency change for conjoined NPs.
 		\end{itemize}
 	\end{small}
 	
@@ -47,20 +45,13 @@
 			\mu_{ijk} = \alpha_k + u_i + w_j\\
 			\alpha_k = \alpha_{\mu} + \alpha_{\tau} \cdot \alpha_{\eta_k}\\
 			\theta_{{NP}_k} = Logit^{-1}(\phi_{{NP}_k})\\
-			\theta_{{NP}} = Logit^{-1}(\phi_{_{\mu_{NP}}})\\		
+			\theta_{\mu_{NP}} = Logit^{-1}(\phi_{_{\mu_{NP}}})\\		
 			\phi_{{NP}_k} \sim Normal(\phi_{\mu_{NP}}, \phi_{\tau}^2)\\
-			\delta_k \sim Normal(\delta_{\mu}, \delta_{\tau}^2)
+			\delta_k \sim Normal(\delta_{\mu}, \delta_{\tau}^2)\\
 			\text{constraint: }\delta_k, \sigma_{e_k}^2, \phi_{\tau}, \delta_{\tau}>0\\
 			\sigma_{e'_k}^2 > \sigma_{e_k}^2 
 		\end{aligned}
 	\end{equation*}
-	
-	\begin{small}	
-		\begin{itemize}
-			\item Pooled coefficient for parameters: $\theta_{NP}$, $\delta$
-%			\item Inverse-logit for continuous prior on mixing proportion.
-		\end{itemize}
-	\end{small}
 	
 \end{frame}
 

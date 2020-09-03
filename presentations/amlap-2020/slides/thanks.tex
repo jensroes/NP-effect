@@ -2,13 +2,29 @@
 	
 	\begin{center}
 		{\huge Thank you for listening!}\\ $\phantom{foo}$ \\
-			\url{jens.roeser@ntu.ac.uk}\\ $\phantom{foo}$ \\
-			\url{nottinghamtrent.academia.edu/JensRoeser}\\
-			\textit{R} and \textit{Stan} code: \url{github.com/jensroes/NP-effect}\\
 	\end{center}
 	
-	\dots and \textbf{Randi Martin}, \textbf{Jason Crowther}, and \textbf{Sophie Hardy} for sharing their data.
+	\dots and \textbf{Randi Martin}, \textbf{Jason Crowther}, and \textbf{Sophie Hardy} (et al.) for sharing their data,
+	
+	\dots and \textbf{Dora Kramar} and \textbf{Andra Tanasescu} for supporting the data collection.
+
+	\begin{center}
+		email: \url{jens.roeser@ntu.ac.uk}\\ 
+		\url{nottinghamtrent.academia.edu/JensRoeser}\\
+		\textit{R} and \textit{Stan} code: \url{github.com/jensroes/NP-effect}\\
+	\end{center}		
 		
-	\dots and \textbf{Dora Kramar} and \textbf{Andra Tanasescu} for help with the data collection.
+	\begin{tikzpicture}[node distance=1cm,remember picture,overlay]
+		
+	% nodes
+	\node[anchor = north] (B) at (6, 1) {$ $};
+	\node[below left = .1cm and 4.25cm of B] (A) {\includegraphics[scale=.35]{gfx/github}};
+
+	% arrows
+	\draw[->, ultra thick, red!60!black, to path={|- (\tikztotarget)}]
+	(B) to [out=260,in=335](A);
+		
+	\end{tikzpicture}
+	
 		
 \end{frame}

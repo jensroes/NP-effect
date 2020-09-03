@@ -8,11 +8,12 @@
 \addbibresource{references.bib}
 \usepackage{framed, color}
 \definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\usepackage{soul}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
 
 \graphicspath{{./gfx/}}
 % Frame number
 \setbeamertemplate{footline}[frame number]
-
 
 \title[]{ No scope for planning -- language pre-planning as mixture process }
 
@@ -22,17 +23,6 @@
 \date{Sept 3, 2020}
 
 \begin{document}\frame{\titlepage}
-
-
-% 1. Planning scope variability: under pressure people dedicate less time to planning
-% 2. Planning scope effect: certain syntactic configuration require more preplanning (regardless of syn adjacency)
-
-% 2 is evidence for syntactic configuration guiding advance planning
-% 1 is evidence against this
-
-
-% flexibility comes from whether or not lexical information within the syntactic scope is activated
-% link to coefficients: 1 sec is too long for only first picture (scene gist, message)
 
 	\input{slides/intro}
 	\input{slides/analysis}
@@ -44,6 +34,8 @@
 	\input{slides/thanks}
 	\input{references}	
 	\input{slides/equations}
+	\input{slides/onsets-meta}
+	\input{slides/onsets-exps}
 	\input{slides/meta-mix_comps}
 	\input{slides/exps-mix_comps}
 	\input{slides/modelcomp-exps}
